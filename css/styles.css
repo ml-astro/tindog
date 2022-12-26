@@ -2,15 +2,37 @@
   --pink: #ff4c68;
 }
 
+#features,
+#testimonials,
+#press,
+#cta,
+#pricing,
+#footer {
+  text-align: center;
+}
+
+#features,
+#testimonials,
+#press,
+#pricing,
+#cta {
+  padding: 8%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.nav-link,
+.navbar-brand,
+h1 {
+  color: white;
 }
 
 h1 {
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
-  color: hsl(0, 0%, 100%);
 }
 
 /* navigation */
@@ -27,7 +49,6 @@ h1 {
 
 #title {
   background-color: var(--pink);
-  padding-bottom: 2rem;
 }
 
 .navbar-brand {
@@ -54,15 +75,12 @@ h1 {
   z-index: 0;
   height: 450px;
 }
+
 .titleimg {
   position: absolute;
   z-index: 1;
   width: 35%;
   right: 12%;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
   transform: rotate(20deg);
 }
 
@@ -70,8 +88,6 @@ h1 {
 
 #features {
   position: relative;
-  padding: 15%;
-  text-align: center;
   background-color: #fff;
 }
 
@@ -86,7 +102,7 @@ h1 {
 
 #features > .row > div > h3 {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 #features > .row > div > p {
@@ -95,14 +111,14 @@ h1 {
 
 /* download buttons */
 .downloadbtn {
-  margin: 9% 5% 0 0;
+  margin: 9% 2%;
 }
 
 /* testimonial  */
 #testimonials {
-  text-align: center;
   background-color: var(--pink);
   color: #fff;
+  padding-bottom: 0;
 }
 
 h2 {
@@ -112,15 +128,14 @@ h2 {
 }
 
 .testimonial-image {
-  margin: 20px;
-  width: 10%;
+  width: 15%;
+  margin: 20px 20px 50px 20px;
   border-radius: 50%;
 }
 
 /* press */
 #press {
   background-color: var(--pink);
-  text-align: center;
   padding: 3%;
 }
 
@@ -128,17 +143,10 @@ h2 {
   width: 15%;
   padding: 20px;
 }
-.testimonial-image {
-  width: 15%;
-  margin: 20px 20px 50px 20px;
-}
 
-.carousel-item {
-  padding: 7% 15% 0 15%;
-}
+/* pricing */
 
 #pricing {
-  padding: 7% 5%;
   background-color: white;
 }
 
@@ -154,10 +162,11 @@ h2 {
   margin-bottom: 3rem;
 }
 
+/* call to action */
+
 #cta {
   background-color: var(--pink);
-  padding: 10%;
-  text-align: center;
+  padding-bottom: 3%;
 }
 
 #cta h3 {
@@ -166,8 +175,14 @@ h2 {
   color: white;
 }
 
-#cta .btn {
-  margin: 4rem 1rem;
+/* footer */
+
+#footer i {
+  margin: 2rem 1rem;
+}
+
+.btn i {
+  margin: auto 10px;
 }
 
 @media (max-width: 1028px) {
@@ -178,19 +193,6 @@ h2 {
   }
   .title-block {
     text-align: center;
-    height:700px;
+    height: 700px;
   }
-}
-
-#footer {
-  text-align: center;
-  padding: 7%;
-}
-
-#footer i {
-  margin: 2rem 1rem;
-}
-
-.btn i {
-  margin: auto 10px;
 }

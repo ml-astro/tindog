@@ -49,9 +49,16 @@ h1 {
   padding: 3% 15%;
 }
 
+.title-block {
+  position: relative;
+  z-index: 0;
+  height: 450px;
+}
 .titleimg {
-  width: 60%;
-  margin-left: 2rem;
+  position: absolute;
+  z-index: 1;
+  width: 35%;
+  right: 12%;
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
@@ -62,8 +69,10 @@ h1 {
 /* features */
 
 #features {
+  position: relative;
   padding: 15%;
   text-align: center;
+  background-color: #fff;
 }
 
 .feature-icon {
@@ -129,12 +138,59 @@ h2 {
 }
 
 #pricing {
-  padding: 17% 5%;
+  padding: 7% 5%;
+  background-color: white;
+}
+
+#pricing h2 {
+  color: black;
 }
 .card {
   padding: 0;
+  background-color: white;
 }
 
 #pricing > p {
   margin-bottom: 3rem;
+}
+
+#cta {
+  background-color: var(--pink);
+  padding: 10%;
+  text-align: center;
+}
+
+#cta h3 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+}
+
+#cta .btn {
+  margin: 4rem 1rem;
+}
+
+@media (max-width: 1028px) {
+  .titleimg {
+    position: static;
+    transform: rotate(0deg);
+    margin-top: 2rem;
+  }
+  .title-block {
+    text-align: center;
+    height:700px;
+  }
+}
+
+#footer {
+  text-align: center;
+  padding: 7%;
+}
+
+#footer i {
+  margin: 2rem 1rem;
+}
+
+.btn i {
+  margin: auto 10px;
 }
